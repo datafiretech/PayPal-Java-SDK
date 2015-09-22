@@ -143,10 +143,10 @@ public abstract class HttpConnection {
 								connection.getErrorStream(),
 								Constants.ENCODING_FORMAT));
 						errorResponse = read(reader);
-						throw new ClientActionRequiredException(
+						throw new ClientActionRequiredException(responsecode, errorResponse,
 								"Response Code : "
 										+ responsecode
-										+ " with response : " + errorResponse + ", change log level to DEBUG for details.");
+										+ " Change log level to DEBUG for details.");
 					} else if (responsecode >= 500) {
 						reader = new BufferedReader(new InputStreamReader(
 								connection.getErrorStream(),

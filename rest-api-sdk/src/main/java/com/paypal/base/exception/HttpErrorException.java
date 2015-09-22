@@ -28,6 +28,12 @@ public class HttpErrorException extends BaseException {
 		this.errorResponse = errorResponse;
 	}
 
+	public HttpErrorException(int responsecode, String errorResponse, String msg) {
+		super(msg);
+		this.responsecode = responsecode;
+		this.errorResponse = errorResponse;
+	}
+	
 	public int getResponsecode() {
 		return responsecode;
 	}

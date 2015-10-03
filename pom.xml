@@ -1,12 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-	<parent>
+    <parent>
 		<groupId>com.datafire</groupId>
 		<artifactId>core-parent-pom</artifactId>
 		<version>2.0</version>
 	</parent>
-
   <groupId>com.paypal.sdk</groupId>
   <artifactId>rest-api</artifactId>
   <version>1.2.10</version>
@@ -20,6 +19,5 @@
   </properties>
   <modules>
   	<module>rest-api-sdk</module>
-  	<module>rest-api-sample</module>
   </modules>
 </project>
